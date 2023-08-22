@@ -1,0 +1,16 @@
+version: '3.9'
+services:
+  db:
+    container_name: spring_db
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_DB=sample_db
+      - POSTGRES_USER=admon
+      - POSTGRES_PASSWORD=sample1234!
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database/scripts:/docker-entrypoint-initdb.d
+    
+# For development you need to run the backend service locally using a debugger with JVM (this is because )

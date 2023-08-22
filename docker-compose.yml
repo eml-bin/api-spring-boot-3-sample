@@ -1,0 +1,35 @@
+version: '3.9'
+services:
+  api:
+    container_name: spring_api
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    environment:
+      - DB_ENGINE=postgresql
+      - DB_HOST=spring_db
+      - DB_USER=admon
+      - DB_PWD=sample1234!
+      - DB_NAME=sample_db
+      - SPRING_ENV=prod
+    depends_on:
+      - db
+    links:
+      - db
+    volumes:
+      - ./backend/src:/app/src
+  db:
+    container_name: spring_db
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_DB=sample_db
+      - POSTGRES_USER=admon
+      - POSTGRES_PASSWORD=sample1234!
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./database/scripts:/docker-entrypoint-initdb.d
+    
