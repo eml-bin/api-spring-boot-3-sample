@@ -1,7 +1,7 @@
 # Spring Boot 3 API with DB (Sample) :computer:
 
 ## Description :clipboard:
-Little sample of Java Spring Boot 3 API based on Platzi Course and using docker to containerize services.
+Little sample of Java Spring Boot 3 API based on Platzi Course and using Docker 🐋 to containerize services.
 
 ### :package: Specifications
 
