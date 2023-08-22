@@ -1,8 +1,9 @@
 # Spring Boot 3 API with DB (Sample) :computer:
 
-### :package: Specifications
-- :yellow_circle: System Detail <br/> 
+## Description
 Little sample of Java Spring 3 API based on Platzi Course
+
+### :package: Specifications
 
 | Service 🧊  | Tech ⚙️ | README 🔗  |
 | --- | --- | --- |
