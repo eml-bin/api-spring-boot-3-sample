@@ -8,7 +8,7 @@ Little sample of Java Spring 3 API based on Platzi Course
 | Service 🧊  | Tech ⚙️ | README 🔗  |
 | --- | --- | --- |
 | API  | Java (Spring Boot) | [backend/README 📄](backend/README.md)|
-| Database Instance  | POstgreSQL | [mysql/README 📄](database/README.md)|
+| Database Instance  | PostgreSQL | [database/README 📄](database/README.md)|
 
 ## Running System Instructions :rocket:
 
